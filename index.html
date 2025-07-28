@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanshree Warokar - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(120deg, rgba(0, 14, 40, 0.9), rgba(42, 69, 114, 0.9)),
+                        url('images (1).jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #1e3c72;
+            margin-top: 20px;
+            user-drag: none;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 20px 0 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #eee;
+        }
+
+        nav {
+            background: #1e3c72;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2a5298;
+        }
+
+        section {
+            display: none;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e3c72;
+            margin-bottom: 30px;
+        }
+
+        .skills-list, .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skills-list div, .projects-list div {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #1e3c72;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <img src="dhanshree.jpg" alt="Dhanshree's Profile">
+            <h1>Dhanshree Warokar</h1>
+            <p>Creative Developer | Innovator | Technophile</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('skills')">Skills</a>
+        <a href="#" onclick="showSection('experience')">Experience</a>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+        <a href="#" onclick="showSection('education')">Education</a>
+        <a href="#" onclick="showSection('resume')">Resume</a>
+        <a href="#" onclick="showSection('certifications')">Certifications</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <section id="about" class="active">
+        <h2>About Me</h2>
+        <p style="max-width: 800px; margin: auto; text-align: center;">
+            AI/ML Engineer with a strong academic foundation from VNIT Nagpur and hands-on experience building and
+deploying machine learning solutions across healthcare, cloud, and computer vision domains. Proficient in Python,
+PyTorch, Scikit-learn, OpenCV, and Microsoft Azure. Demonstrated success in developing end-to-end AI pipelines for
+medical imaging, anomaly detection, and synthetic data generation. Experienced with explainable AI techniques
+(SHAP, LIME), statistical modeling, and Power BI for real-time reporting and insights. Strong collaborator with a focus
+on scalable, production-ready systems.        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div>HTML & CSS</div>
+            <div>JavaScript</div>
+            <div>Python</div>
+            <div>PowerShell</div>
+            <div>MySQL</div>
+            <div>Machine Learning</div>
+            <div>Artificial Intelligence</div>
+            <div>Azure</div>
+            <div>Power BI</div>
+            <div>Git & GitHub</div>
+            <div>Cloud Security</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div style="max-width: 800px; margin: auto;">
+            <strong>AI/ML Engineer, Accenture Solutions Private Limited (Aug 2024 – Present)</strong>
+            <ul>
+                <li>Developed and deployed a deepfake detection system for MRI/CT scans using CNNs, KL divergence, Fisher-Rao metrics, and ELA, improving detection accuracy by 32%.</li>
+                <li>Generated 10,000+ synthetic medical volumes using GANs (Medigan, Pix2Pix) and diffusion models (MAISI), enhancing model generalization by 27%.</li>
+                <li>Applied VGG features, Fourier transforms, and KMeans clustering to detect anomalies; boosted performance by 23% using optimized CNN and SVM models.</li>
+                <li>Documented model pipelines and collaborated with cloud, data, and security teams, accelerating development by 30%.</li>
+            </ul>
+            <!-- <br>
+            <strong>Application Development Associate, Accenture (Jul 2023 – Jul 2024)</strong>
+            <ul>
+                <li>Developed automation scripts for cloud governance and compliance monitoring using Python and Azure SDKs.</li>
+                <li>Built a Threat Landscape dashboard to visualize and triage incidents effectively.</li>
+                <li>Automated compliance checks against CIS Benchmarks using PowerShell and integrated results into Power BI.</li>
+                <li>Improved Azure resource visibility using KQL-based queries and interactive reports.</li>
+            </ul>
+            <br> -->
+            <strong>Advanced Application Intern, Accenture (Jun 2023 – Jul 2023)</strong>
+            <ul>
+                <li>Built secure web apps on Microsoft Azure using CIS benchmarks, reducing security risks by 40%.</li>
+                <li>Automated cloud provisioning and identity workflows, cutting manual setup time by 60%.</li>
+                <li>Developed Power BI dashboards for real-time infrastructure monitoring, improving stakeholder visibility and response.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <div>
+                <h3>Threat Landscape Dashboard</h3>
+                <p>Visualizing threats using HTML, CSS & JS</p>
+            </div>
+            <div>
+                <h3>CIS Benchmark Automation</h3>
+                <p>Automated Azure security checks, visualized in Power BI.</p>
+            </div>
+            <div>
+                <h3>RVEF Prediction</h3>
+                <p>Used Conv3D + TCN for cardiac ejection prediction via echo videos.</p>
+            </div>
+            <div>
+                <h3>Corona Cases Prediction</h3>
+                <p>Forecasting COVID-19 cases using Python ML techniques.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p style="max-width: 800px; margin: auto; text-align: center;">
+            <strong>Bachelor of Technology (B.Tech) in Electronics and Communication Engineering(ECE)</strong><br>
+            Visvesvaraya National Institute of Technology (VNIT), Nagpur<br>
+            Graduated: 2024
+        </p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p style="text-align: center;">Download my resume <a href="Dhanshree_Warokar_Resume.pdf" target="_blank">here</a>.</p>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul style="max-width: 800px; margin: auto; list-style: square;">
+            <li>Microsoft Certified: Azure Fundamentals</li>
+            <li>Google Data Analytics Certificate</li>
+            <li>AI for Everyone – Coursera</li>
+            <li>Deep Learning Specialization – Coursera</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:dhanshreewarokar13@gmail.com">dhanshreewarokar13@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/dhanshree-warokar-2301b5227/" target="_blank">dhanshree-warokar</a></p>
+        <p>GitHub: <a href="https://github.com/DhanshreeWarokar13" target="_blank">DhanshreeWarokar13</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dhanshree Warokar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll("section").forEach(section => {
+                section.classList.remove("active");
+            });
+            document.getElementById(id).classList.add("active");
+            document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
